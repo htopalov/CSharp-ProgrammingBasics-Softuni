@@ -6,14 +6,16 @@ namespace SumNumbers
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
+            int number = int.Parse(Console.ReadLine());
             int sum = 0;
-            for(int i=0; i<n; i++)
+            while(sum<number)
             {
-                int number = int.Parse(Console.ReadLine());
-                sum += number;
+                int inputNumber = int.Parse(Console.ReadLine());
+                sum += inputNumber;
             }
             Console.WriteLine(sum);
+
+
         }
     }
 }
